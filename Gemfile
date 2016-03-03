@@ -40,6 +40,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'pry-doc'
   gem 'pry-stack_explorer'
+  gem 'awesome_print'
 end
 
 group :development do
