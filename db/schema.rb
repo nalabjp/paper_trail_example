@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160307162542) do
+ActiveRecord::Schema.define(version: 20160307163740) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "title",      limit: 255
@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 20160307162542) do
     t.text     "object",         limit: 4294967295
     t.datetime "created_at"
     t.integer  "transaction_id", limit: 4
+    t.text     "object_changes", limit: 4294967295
   end
 
   add_index "versions", ["item_type", "item_id"], name: "index_versions_on_item_type_and_item_id", using: :btree
